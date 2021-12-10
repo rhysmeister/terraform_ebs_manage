@@ -80,6 +80,6 @@ resource "aws_instance" "instance-four" {
     }
 
     tags = {
-        Name = "instance-three"
+        Name = "instance-four"
     }
 }
