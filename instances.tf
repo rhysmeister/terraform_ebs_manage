@@ -48,7 +48,7 @@ resource "aws_instance" "instance-three" {
     }
 
     ebs_block_device {
-        device_name = "/dev/sdb1"
+        device_name = var.additional_volume_name
         volume_size = 10
         volume_type = "gp2"
     }
@@ -70,7 +70,7 @@ resource "aws_instance" "instance-four" {
     }
 
     ebs_block_device {
-        device_name = "/dev/sdb1"
+        device_name = var.additional_volume_name
         volume_size = 10
         volume_type = "gp2"
     }
